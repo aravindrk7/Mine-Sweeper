@@ -13,7 +13,9 @@ function setup()
 {
   //NoCanvas();
   canvas=createCanvas(801,401);
-  canvas.position(220,200);
+  var x = (windowWidth - 801) / 2;
+  var y = (windowHeight - 401) / 2;
+  canvas.position(x, y);
   var timer = select('#timer');
   function mine_time()
   {
